@@ -18,10 +18,9 @@ export default function Actividades(){
     ));
 
     return(
-    <div className="h-[75vh] pb-4 bg-pistachio-600 bg-cover bg-center">
+    <div id="actividades" className="h-[75vh] pb-4 bg-pistachio-600 bg-cover bg-center">
         <motion.div
         ref={actividadesRef}
-        id="actividades"
         style={{
             scale: scaleProgess,
             opacity: opacityProgess,
