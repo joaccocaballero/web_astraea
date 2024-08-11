@@ -13,6 +13,7 @@ export const HoverEffect = ({
       className={cn("flex flex-col py-1 mt-4 overflow-auto h-[50vh]", className)}>
       {items.map((item, idx) => (
         <div
+          key= {idx}
           className="relative group block p-1 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}>
@@ -36,8 +37,8 @@ export const HoverEffect = ({
             <CardTitle className="font-bold text-lg drop-shadow-lg">{item.title}</CardTitle>
             {
               (item.array) ?
-                item.array.map((description) => (
-                  <CardDescription className={"text-justify drop-shadow-lg"}>{description}</CardDescription>
+                item.array.map((description, index) => (
+                  <CardDescription key={index} className={"text-justify drop-shadow-lg"}>{description}</CardDescription>
                 ))
               :
               <CardDescription className={"text-justify drop-shadow-lg"}>{item.description}</CardDescription>
