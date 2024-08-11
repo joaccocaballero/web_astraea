@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
-import { sobreNosotros } from '../lib/data';
+import { sobreNosotros } from '../../lib/data';
 
 
 export default function Nosotros(){

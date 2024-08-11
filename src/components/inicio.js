@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { intro } from '../lib/data';
+import { intro } from '../../lib/data';
 
 
 export default function Inicio(){
