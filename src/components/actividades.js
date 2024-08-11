@@ -2,11 +2,7 @@
 
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
-import { sobreNosotros } from '../../lib/data';
-import { HoverEffect } from './ui/card-hover-effect';
-import Image from "next/image";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
-import { useOutsideClick } from '../../hooks/use-outside-click';
 
 export default function Actividades(){
     const actividadesRef = useRef(null);
