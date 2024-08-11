@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ActiveSectionContextProvider } from "../../context/activeSectionContext";
-import NavBar from "../../components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +13,6 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <ActiveSectionContextProvider>
         <body className={inter.className}>
-          <NavBar/>
           {children}
         </body>
       </ActiveSectionContextProvider>
