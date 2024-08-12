@@ -12,7 +12,7 @@ export default function Home() {
       <NavBar/>
       <Inicio/>
       <Nosotros/>
-      <Actividades  />
+      <Actividades/>
       <Imagenes/>
     </main>
   );

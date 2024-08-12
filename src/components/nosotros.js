@@ -32,7 +32,7 @@ export default function Nosotros(){
                     <p dangerouslySetInnerHTML={{ __html: sobreNosotros.descripcion_1 }} className="text-lg sm:text-md text-white drop-shadow-xl mt-4 text-justify pr-2 mr-2 w-[50%] sm:w-[100%]">
                     </p> 
 
-                    <p dangerouslySetInnerHTML={{ __html: sobreNosotros.descripcion_1 }} className="text-lg sm:text-md text-white drop-shadow-xl mt-4 text-justify pr-2 mr-2 w-[50%] sm:w-[100%]">
+                    <p dangerouslySetInnerHTML={{ __html: sobreNosotros.descripcion_2 }} className="text-lg sm:text-md text-white drop-shadow-xl mt-4 text-justify pr-2 mr-2 w-[50%] sm:w-[100%]">
                     </p> 
                 </div>
 
