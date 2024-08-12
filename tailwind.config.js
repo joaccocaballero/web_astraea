@@ -67,7 +67,7 @@ module.exports = {
           "900": "#e7edde"
         },
         "pistachio": {
-          "DEFAULT": "#b4d483",
+          "DEFAULT": "#b8d782",
           "100": "#263311",
           "200": "#4b6623",
           "300": "#719934",

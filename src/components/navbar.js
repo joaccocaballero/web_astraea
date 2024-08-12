@@ -13,7 +13,7 @@ export default function NavBar(){
 
     return(
         <header>
-            <nav className="flex justify-between w-full items-center rounded-b-lg p-1 px-4 bg-asparagus-400 sm:flex-col z-[999] fixed top-0">
+            <nav className="flex justify-between w-full items-center rounded-b-lg p-1 px-4 bg-pistachio sm:flex-col z-[999] fixed top-0">
                 <Image src={'/logo_header.png'} width={70} height={50} alt='logo'>
                 </Image>
                 <ul className="flex gap-4 sm:p-1 text-sm flex-wrap items-center justify-center">
@@ -24,7 +24,8 @@ export default function NavBar(){
                                     key={index}
                                 >
                                     <Link href={link.hash} className={clsx("drop-shadow-lg", {
-                                        "font-bold text-pistachio-900": activeSection === link.nombre
+                                        "font-bold text-pistachio-900": activeSection === link.nombre,
+                                        "text-asparagus-200": activeSection !== link.nombre
                                     }) }
                                     onClick={() => {
                                         setActiveSection(link.nombre);
