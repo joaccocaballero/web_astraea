@@ -13,7 +13,7 @@ export default function Nosotros(){
     const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
     return(
-    <div className="sm:h-[210vh] md:h-[200vh] h-[120vh] pb-4 bg-asparagus bg-cover bg-center">
+    <div className="sm:h-[175vh] md:h-[200vh] h-[120vh] pb-4 bg-asparagus bg-cover bg-center">
         <motion.div
         ref={nosotrosRef}
         id="nosotros"
