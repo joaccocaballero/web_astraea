@@ -23,8 +23,8 @@ export default function NavBar(){
                                 <motion.li
                                     key={index}
                                 >
-                                    <Link href={link.hash} className={clsx("text-white drop-shadow-lg", {
-                                        "font-bold text-reseda_green-200": activeSection === link.nombre
+                                    <Link href={link.hash} className={clsx("drop-shadow-lg", {
+                                        "font-bold text-pistachio-900": activeSection === link.nombre
                                     }) }
                                     onClick={() => {
                                         setActiveSection(link.nombre);
