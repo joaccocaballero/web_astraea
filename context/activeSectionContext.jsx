@@ -4,7 +4,7 @@ import React, { useState, createContext, useContext } from 'react';
 const ActiveSectionContext = createContext(null);
 
 function ActiveSectionContextProvider({ children }) {
-  const [activeSection, setActiveSection] = useState('Home');
+  const [activeSection, setActiveSection] = useState('inicio');
   const [timeOfLastClick, setTimeOfLastClick] = useState(0); // seguimiento del tiempo del último clic para deshabilitar temporalmente el observador cuando el usuario hace clic en un enlace
 
   return (

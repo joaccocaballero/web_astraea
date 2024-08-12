@@ -1,22 +1,25 @@
+'use client';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
 import { sobreNosotros } from '../../lib/data';
 import { HoverEffect } from './ui/card-hover-effect';
+import { useSectionInView } from '../../hooks/hooks';
 
 export default function Nosotros(){
-    const nosotrosRef = useRef(null);
+    const { ref } = useSectionInView('Nosotros', 0.25);
+
+    const { nosotrosRef } = useRef(null);
     const { scrollYProgress } = useScroll({
-    target: nosotrosRef,
-    offset: ["0 1", "1.33 1"],
+      target: nosotrosRef,
+      offset: ["0 1", "1.33 1"],
     });
     const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
     const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
     return(
-    <div className="sm:h-[175vh] md:h-[200vh] h-[120vh] pb-4 bg-asparagus bg-cover bg-center">
+    <div className="sm:h-[175vh] md:h-[200vh] h-[120vh] pb-4 bg-asparagus bg-cover bg-center" id='nosotros' ref={ref}>
         <motion.div
         ref={nosotrosRef}
-        id="nosotros"
         style={{
             scale: scaleProgess,
             opacity: opacityProgess,

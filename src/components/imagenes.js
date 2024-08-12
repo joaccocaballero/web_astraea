@@ -2,11 +2,14 @@
 "use client";
 
 import { Carousel } from "flowbite-react";
+import { useSectionInView } from "../../hooks/hooks";
 
 export default function Imagenes() {
+  const { ref } = useSectionInView('Imágenes', 0.25);
+
   return (
-    <div className="h-[100vh] sm:h-[50vh] w-full p-4 bg-asparagus-900 flex flex-col gap-5">
-        <Carousel className="mt-4 h-full">
+    <div className="scroll-mt-10 h-[100vh] sm:h-[100vh] w-full p-4 bg-asparagus-900 flex flex-col items-center justify-center gap-5" id="imagenes" ref={ref}>
+        <Carousel className="mt-4 sm:h-[50vh]">
             <div className="flex justify-center items-center h-full">
             <img src="/galeria/1.jpg" alt="..." className="h-full w-auto object-cover" />
             </div>

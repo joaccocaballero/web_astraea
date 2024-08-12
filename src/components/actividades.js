@@ -3,9 +3,14 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import { useSectionInView } from '../../hooks/hooks';
 
 export default function Actividades(){
+
+    const {ref} = useSectionInView('Actividades', 0.44);
+
     const actividadesRef = useRef(null);
+
     const { scrollYProgress } = useScroll({
     target: actividadesRef,
     offset: ["0 1", "1.33 1"],
@@ -18,7 +23,7 @@ export default function Actividades(){
     ));
 
     return(
-    <div id="actividades" className="h-[75vh] pb-4 bg-pistachio-600 bg-cover bg-center">
+    <div id="actividades" ref={ref} className="h-[75vh] pb-4 bg-pistachio-600 bg-cover bg-center scroll-mt-28">
         <motion.div
         ref={actividadesRef}
         style={{
