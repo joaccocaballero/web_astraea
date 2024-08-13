@@ -10,7 +10,7 @@ export const HoverEffect = ({
 
   return (
     (<div
-      className={cn("flex flex-col py-1 mt-4 overflow-auto h-[50vh]", className)}>
+      className={cn("flex flex-col mt-4 overflow-auto h-[70vh]", className)}>
       {items.map((item, idx) => (
         <div
           key= {idx}

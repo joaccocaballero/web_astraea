@@ -17,7 +17,7 @@ export default function Nosotros(){
     const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
     return(
-    <div className="sm:h-[175vh] md:h-[200vh] h-[120vh] pb-4 bg-asparagus bg-cover bg-center" id='nosotros' ref={ref}>
+    <div className="h-fit pb-2 bg-asparagus bg-cover bg-center" id='nosotros' ref={ref}>
         <motion.div
         ref={nosotrosRef}
         style={{
@@ -28,7 +28,7 @@ export default function Nosotros(){
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}
         >
-            <div className="w-full pt-[3rem] flex flex-col h-fit pl-10 pb-[10rem] sm:pl-[1rem] sm:pb-[2rem] ">
+            <div className="w-full pt-[3rem] flex flex-col h-fit pl-10 pb-[1rem] sm:pl-[1rem]">
                 <h1 className="text-5xl sm:text-4xl font-bold text-start drop-shadow-xl text-white">Sobre Nosotros</h1>
 
                 <div className='flex sm:flex-col mt-2 w-full justify-between gap-[2rem] mb-5'>
@@ -39,8 +39,8 @@ export default function Nosotros(){
                     </p> 
                 </div>
 
-                <div className="flex w-full px-8 sm:px-0 mb-2">
-                    <HoverEffect items={projects} />
+                <div className="flex w-full px-2 sm:px-0">
+                    <HoverEffect items={projects}/>
                 </div>
             </div>
         </motion.div>

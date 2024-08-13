@@ -23,7 +23,7 @@ export default function Actividades(){
     ));
 
     return(
-    <div id="actividades" ref={ref} className="h-[75vh] pb-4 bg-pistachio-600 bg-cover bg-center scroll-mt-28">
+    <div id="actividades" ref={ref} className="h-fit pb-4 bg-pistachio-600 bg-cover bg-center scroll-mt-28">
         <motion.div
         ref={actividadesRef}
         style={{
